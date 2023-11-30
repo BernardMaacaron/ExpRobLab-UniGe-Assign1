@@ -1,0 +1,19 @@
+<!-- assignment1.launch -->
+
+<launch>
+
+
+
+<!-- LAUNCHIN WORLD WITH MARKERS AND ROBOT -->
+
+
+  <!-- LAUNCH THE WORLD -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="/home/ecn/ros/src/aruco_ros/aruco_ros/worlds/aruco_assignment.world"/>
+  </include>
+
+  <!-- LAUNCH THE ROBOT -->
+  <include file="$(find rosbot_bringup)/launch/rosbot_gazebo.launch"/>
+
+
+</launch>

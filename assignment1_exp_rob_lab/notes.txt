@@ -1,0 +1,16 @@
+IN RVIZ: fixed Frame: camera_link
+
+
+to see the output of the camera
+rosrun image_view image_view image:=/camera/color/image_raw
+
+
+
+TO LAUNCH: 
+LAUNCH WORLD AND ROBOT: 
+>>roscore
+>>roslaunch assignment1_exp_rob_lab assignment1.launch
+>>rosrun assignment1_exp_rob_lab lookformarker1.py
+NOT NECESSARY then if you want to run rviz: >>rosrun rviz rviz -d /assignment1_exp_rob_lab/config/rvizconfig.rviz
+
+
